@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const slides = [
   {
-    title: "Iglesia Bautista Vida Eterna",
+    title: "Iglesia Bautista<br />Vida Eterna",
     subtitle: '"Una Iglesia que te transforma."',
     image: "/hero/hero1.jpg",
     cta: "Ultimo Sermon",
@@ -52,7 +52,7 @@ export default function Hero() {
                   {slide.subtitle}
                 </p>
                 <Link href={slide.href}>
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors">
+                  <button className="bg-transparent outline outline-1 outline-white  shadow-white shadow-inner hover:bg-black/50 text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors">
                     {slide.cta}
                   </button>
                 </Link>

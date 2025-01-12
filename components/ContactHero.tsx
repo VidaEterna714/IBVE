@@ -7,12 +7,12 @@ export default function ContactHero() {
         <Image
           src="/contact/contactMap.jpeg"
           alt="Contacto"
-          layout="fill"
-          objectFit="cover"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           quality={100}
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/60"></div>
       </div>
       <div className="container mx-auto px-4 z-10 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white animate-fade-in-up">Contáctenos</h1>

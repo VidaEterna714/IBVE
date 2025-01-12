@@ -8,7 +8,21 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Iglesia Bautista Vida Eterna',
-  description: 'Una Iglesia Para Su Familia',
+  description: "Una Iglesia Para Su Familia Descubre Esperanza y Comunidad ¿Buscas un lugar donde pertenecer? Iglesia Bautista Vida Eterna es más que una iglesia: ¡es una familia! Ubicada en el corazón de Santa Ana, somos una comunidad vibrante comprometida a compartir el amor de Dios y construir relaciones duraderas.",
+  openGraph: {
+    images: [
+      {
+        url: '/hero/hero1.jpg',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: '/hero/hero2.jpg',
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
 }
 
 export default function RootLayout({

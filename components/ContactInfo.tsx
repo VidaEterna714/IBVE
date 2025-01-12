@@ -2,13 +2,12 @@
 
 import Image from 'next/image'
 import { FaYoutube, FaInstagram, FaFacebook, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa'
-import ContactForm from './ContactForm'
 
 const contactData = [
   {
     icon: <FaMapMarkerAlt className="text-blue-500 mb-4" size={32} />,
     title: "Dirección",
-    content: <p>929 S Birch St, Santa Ana, CA 92701</p>,
+    content: <p><a href="https://www.google.com/maps/place/Iglesia+Bautista+Vida+Eterna/@33.746492,-117.891116,15z/data=!4m2!3m1!1s0x0:0x1111111111111111?sa=X&ved=2ahUKEwjF497Y48L_AhXQ54sKHX68B18Q_BJ6BAhBEAU" target="_blank" rel="noopener noreferrer">929 S Birch St, Santa Ana, CA 92701</a></p>,
     image: "/contact/contact-marker.webp"
   },
   {
@@ -16,9 +15,9 @@ const contactData = [
     title: "Teléfonos",
     content: (
       <div>
-        <p>Oficina: 714-285-1774</p>
-        <p>Pastor Noé Carrera: 714-335-4693</p>
-        <p>Hno. Raúl Castro: 714-791-0921</p>
+        <p>Oficina: <a href="tel:714-285-1774">714-285-1774</a></p>
+        <p>Pastor Noé Carrera: <a href="tel:714-335-4693">714-335-4693</a></p>
+        <p>Hno. Raúl Castro: <a href="tel:714-791-0921">714-791-0921</a></p>
       </div>
     ),
     image: "/contact/phone.webp"
@@ -26,7 +25,7 @@ const contactData = [
   {
     icon: <FaEnvelope className="text-blue-500 mb-4" size={32} />,
     title: "Correo Electrónico",
-    content: <p>vidaeterna714@outlook.com</p>,
+    content: <p><a href="mailto:vidaeterna714@outlook.com">vidaeterna714@outlook.com</a></p>,
     image: "/contact/email.webp"
   },
   {
@@ -67,8 +66,8 @@ const ContactCard = ({ title, content, image }: { title: string, content: React.
         <Image
           src={image}
           alt={title}
-          layout="fill"
-          objectFit="cover"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           quality={100}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 group-hover:from-black/70 group-hover:to-black/90 transition-all duration-300"></div>
@@ -102,7 +101,6 @@ export default function ContactInfo() {
           ))}
         </div>
         <div className="flex justify-center items-center w-1/2 mx-auto">
-          <ContactForm />
         </div>
 
         <div className="mt-16">
