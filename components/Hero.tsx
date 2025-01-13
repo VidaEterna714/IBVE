@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const slides = [
   {
-    title: "Iglesia Bautista<br />Vida Eterna",
+    title: "Iglesia Bautista Vida Eterna",
     subtitle: '"Una Iglesia que te transforma."',
     image: "/hero/hero1.jpg",
     cta: "Ultimo Sermon",
