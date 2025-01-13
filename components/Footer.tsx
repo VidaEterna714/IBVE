@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-400">&copy; 2023 Iglesia Bautista Vida Eterna. Todos los derechos reservados.</p>
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} Iglesia Bautista Vida Eterna. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

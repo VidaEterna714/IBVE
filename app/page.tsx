@@ -18,7 +18,7 @@ export default function Home() {
       <ServiceTimes />
       <section className="w-full py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Conectemos</h2>
+          <h2 className="text-3xl font-bold mb-6">Conectate</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Síguenos en las redes sociales
           </p>
