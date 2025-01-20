@@ -9,7 +9,7 @@ import Link from "next/link";
 const slides = [
   {
     title: "Iglesia Bautista Vida Eterna",
-    subtitle: '"Una Iglesia que te transforma."',
+    subtitle: '"Una Iglesia que te transforma"',
     image: "/hero/hero1.jpg",
     cta: "Ultimo Sermon",
     href: '/sermones'
@@ -35,21 +35,21 @@ export default function Hero() {
   }
 
   return (
-    <section className="slider-container max-w-[1600px] mx-auto -mt-10">
+    <section className="slider-container  -mt-10">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="relative h-[70vh]">
+          <div key={index} className="relative saturate-200 hue-rotate-180 h-[65vh]">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               <div className="absolute inset-0 bg-black/50" />
-              <div className="relative z-10 flex flex-col items-center justify-end pb-28 h-full text-center text-white px-4">
+              <div className="relative z-10 flex flex-col items-center md:w-[38rem] mx-auto justify-end pb-28 h-full text-center text-white px-4 font-serif">
                 <h1 className="text-5xl md:text-7xl font-bold mb-4">
                   {slide.title}
                 </h1>
-                <p className="text-xl md:text-2xl mb-8">
-                  {slide.subtitle}
+                <p className="text-xl md:text-2xl mb-8 text-yellow-500 font-serif">
+                  {slide.subtitle.toUpperCase()}
                 </p>
                 <Link href={slide.href}>
                   <button className="bg-transparent outline outline-1 outline-white  shadow-white shadow-inner hover:bg-black/50 text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors">

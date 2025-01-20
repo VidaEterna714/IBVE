@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { FaYoutube, FaInstagram, FaFacebook, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa'
+import Map from './Map'
 
 const contactData = [
   {
@@ -61,9 +62,10 @@ const contactData = [
 
 const ContactCard = ({ title, content, image }: { title: string, content: React.ReactNode, image: string }) => {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-md group shadow-black hover:shadow-gray-500 transition-all duration-900">
+    <div className="relative overflow-hidden rounded-lg   group shadow-black hover:shadow-gray-500 transition-all duration-900">
       <div className="absolute inset-0 z-0">
         <Image
+          className="saturate-200"
           src={image}
           alt={title}
           fill
@@ -76,7 +78,7 @@ const ContactCard = ({ title, content, image }: { title: string, content: React.
         <div>
 
           <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-          <div className="text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="text-gray-300 opacity-0  group-hover:opacity-100 transition-opacity duration-300">
             {content}
           </div>
         </div>
@@ -90,7 +92,7 @@ export default function ContactInfo() {
     <section className="py-20 ">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">Contáctenos</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 filter  md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {contactData.map((contact, index) => (
             <ContactCard
               key={index}
@@ -103,19 +105,7 @@ export default function ContactInfo() {
         <div className="flex justify-center items-center w-1/2 mx-auto">
         </div>
 
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-8">Nuestra Ubicación</h2>
-          <div className="rounded-lg overflow-hidden shadow-lg shadow-black">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.9557863437584!2d-117.87291068479242!3d33.74179798068894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd9c5d9a2d3c3%3A0x8b9f4b3d4d4d4d4d!2s929%20S%20Birch%20St%2C%20Santa%20Ana%2C%20CA%2092701!5e0!3m2!1sen!2sus!4v1623456789012!5m2!1sen!2sus"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
+        <Map />
       </div>
     </section>
   )

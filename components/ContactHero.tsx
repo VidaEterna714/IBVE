@@ -2,13 +2,14 @@ import Image from 'next/image'
 
 export default function ContactHero() {
   return (
-    <section className="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[65vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/contact/contactMap.jpeg"
           alt="Contacto"
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover hue-rotate-180 saturate-200"
           quality={100}
           priority
         />

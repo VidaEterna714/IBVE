@@ -9,14 +9,14 @@ import { FaFacebook } from 'react-icons/fa'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
-      <div className="mt-20">
+    <main className="flex min-h-screen flex-col max-w-[1675px] mx-auto ">
+      <div className="mt-20 ">
         <Hero />
       </div>
       <WelcomeSection />
       <MinistryGrid />
       <ServiceTimes />
-      <section className="w-full py-20 bg-white">
+      <section className="w-full py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Conectate</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">

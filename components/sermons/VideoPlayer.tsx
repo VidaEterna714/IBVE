@@ -14,7 +14,7 @@ export default function VideoPlayer({ videoId }: VideoPlayerProps) {
 
     if (!isPlaying) {
         return (
-            <div className="aspect-video w-full max-w-7xl mx-auto bg-black relative cursor-pointer group"
+            <div className="aspect-video w-full max-w-7xl mx-auto bg-black relative cursor-pointer group rounded-lg outline outline-2 outline-offset-2 outline-gray-500/50 overflow-hidden"
                 onClick={() => setIsPlaying(true)}>
                 <Image
                     src={thumbnailUrl}
@@ -32,7 +32,7 @@ export default function VideoPlayer({ videoId }: VideoPlayerProps) {
     }
 
     return (
-        <div className="aspect-video w-full max-w-7xl mx-auto bg-black">
+        <div className="aspect-video w-full max-w-7xl mx-auto bg-black rounded-lg outline outline-2 outline-offset-2 outline-gray-500/50 overflow-hidden">
             <iframe
                 className="w-full h-full"
                 src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
