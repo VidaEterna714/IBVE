@@ -18,7 +18,7 @@ const contactData = [
       <div>
         <p>Oficina: <a href="tel:714-285-1774">714-285-1774</a></p>
         <p>Pastor Noé Carrera: <a href="tel:714-335-4693">714-335-4693</a></p>
-        <p>Hno. Raúl Castro: <a href="tel:714-791-0921">714-791-0921</a></p>
+        <p>Pastor Braulio Saravia: <a href="tel:714-240-9727">714-240-9727</a></p>
       </div>
     ),
     image: "/contact/phone.webp"
