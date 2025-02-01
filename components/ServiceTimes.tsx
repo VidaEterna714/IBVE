@@ -6,7 +6,7 @@ export default function ServiceTimes() {
                     <div className="text-center md:text-left p-4  pb-4 rounded-lg hover:shadow-lg transition-all duration-600">
                         <h2 className="text-3xl font-bold mb-6">📅 Horarios de Servicios</h2>
                         <div className="space-y-4 text-xl">
-                            <p>Domingos a las 10:00 AM</p>
+                            <p>Domingos a las 9:00 AM y 10:30 AM</p>
                             <p>Miércoles a las 7:00 PM</p>
                         </div>
                     </div>
