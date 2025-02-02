@@ -8,7 +8,7 @@ const contactData = [
   {
     icon: <FaMapMarkerAlt className="text-blue-500 mb-4" size={32} />,
     title: "Dirección",
-    content: <p><a href="https://www.google.com/maps/place/Iglesia+Bautista+Vida+Eterna/@33.746492,-117.891116,15z/data=!4m2!3m1!1s0x0:0x1111111111111111?sa=X&ved=2ahUKEwjF497Y48L_AhXQ54sKHX68B18Q_BJ6BAhBEAU" target="_blank" rel="noopener noreferrer">929 S Birch St, Santa Ana, CA 92701</a></p>,
+    content: <p><a href="https://www.google.com/maps/place/929+S+Birch+St,+Santa+Ana,+CA+92701/@33.7462222,-117.8962222,15z/data=!4m2!3m1!1s0x0:0x40d7e66987b98f0!5m2!1s0x0:0x40d7e66987b98f0?sa=X&ved=2ahUKEwjF442146L_AhXQ5jgGHYQ5B18Q_BJ6BAhIEAU" target="_blank" rel="noopener noreferrer">929 S Birch St, Santa Ana, CA 92701</a></p>,
     image: "/contact/contact-marker.webp"
   },
   {
